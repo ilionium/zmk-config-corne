@@ -69,10 +69,10 @@
 
         Numbers {
             bindings = <
-&mt LEFT_GUI GRAVE  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_CLR        &out OUT_TOG        &kp KP_DIVIDE     &kp KP_MULTIPLY   &kp MINUS         &kp LS(KP_PLUS)  &kp EQUAL     &kp BACKSLASH
-&kp TAB             &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5        &kp NUMBER_6      &kp N7            &kp NUMBER_8      &kp NUMBER_9     &kp NUMBER_0  &mt SLASH LS(SLASH)
-&kp LSHIFT          &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(N9)       &kp LS(N0)    &kp LEFT_ALT
-                                                        &trans            &trans            &trans              &trans            &trans            &trans
+&mt LEFT_GUI GRAVE  &bt BT_SEL 0  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(MINUS) MINUS          &none   &kp KP_DIVIDE         &kp KP_MULTIPLY  &none  &none  &bt BT_CLR
+&kp TAB             &bt BT_SEL 1  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &mt LS(EQUAL) EQUAL          &none   &kp KP_SUBTRACT       &kp KP_PLUS      &none  &none  &out OUT_TOG
+&kp LSHIFT          &bt BT_SEL 2  &mt LS(N7) N7              &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &none   &kp NON_US_BACKSLASH  &none            &none  &none  &kp LEFT_ALT
+                                                             &trans                     &trans                     &trans                       &trans  &trans                &trans
             >;
         };
 
@@ -84,9 +84,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LEFT_GUI  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOLUME_UP      &kp BACKSPACE  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp HOME      &kp INSERT
-&kp TAB       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_MUTE           &kp DELETE     &kp LEFT     &kp DOWN  &kp RIGHT      &kp END       &kp PRINTSCREEN
-&kp LSHFT     &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_DOWN    &none          &none        &none     &none          &kp CAPSLOCK  &kp LEFT_ALT
+&kp LEFT_GUI  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOLUME_UP      &kp BACKSPACE  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END       &kp INSERT
+&kp TAB       &kp F5  &kp F6   &kp F7   &kp F8   &kp C_MUTE           &kp DELETE     &kp LEFT     &kp DOWN       &kp UP    &kp RIGHT     &kp PRINTSCREEN
+&kp LSHFT     &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_DOWN    &none          &none        &none          &none     &kp CAPSLOCK  &kp LEFT_ALT
                                &trans   &trans   &trans               &trans         &trans       &trans
             >;
         };
