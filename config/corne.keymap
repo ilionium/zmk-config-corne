@@ -50,6 +50,22 @@
         };
     };
 
+    macros {
+        Lang: Lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "LANG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,7 +79,7 @@
             bindings = <
 &none  &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y        &kp U               &kp I         &kp O            &kp P                &none
 &none  &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G        &kp H        &hrm RIGHT_SHIFT J  &hrm RCTRL K  &hrm LEFT_ALT L  &hrm RIGHT_GUI SEMI  &none
-&none  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M               &kp COMMA     &kp DOT          &kp FSLH             &none
+&Lang  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M               &kp COMMA     &kp DOT          &kp FSLH             &Lang
                                          &lt 3 ESC     &lt 1 SPACE        &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE     &lt 6 DEL
             >;
         };
