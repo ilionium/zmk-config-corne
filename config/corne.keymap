@@ -23,6 +23,21 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <9 8>;
         };
+
+        Comma {
+            bindings = <&kp LS(SLASH)>;
+            key-positions = <32 33>;
+        };
+
+        Dot {
+            bindings = <&kp SLASH>;
+            key-positions = <33 34>;
+        };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
     };
 
     behaviors {
